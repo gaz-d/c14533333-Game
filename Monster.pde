@@ -44,8 +44,7 @@ class Monster{
   void display() {
     stroke(0);
    // fill(127);
-    
-    //ellipse(x,y,100,100);
+   
   }
   
   void follow() {
@@ -63,16 +62,7 @@ class Monster{
 
   }
   
-  /*
-  boolean overlap(Hero main) {
-  float d = dist(x,y,main.x,main.y);
-    
-    if(d < r + other.r) {
-      return true;
-    } else{
-      return false;
-    }
-    */
+
   }
   
   
