@@ -69,6 +69,7 @@ void draw(){
         m.follow();
         m.where.x = 100;
         m.where.y = 100;
+        //monster reset
        
       } //checks if monster is near hero and decrements score if within a certain distance
       
@@ -183,11 +184,12 @@ void draw(){
         stage = 4;
      
        }
+       
         f.lives--;
-        m.follow();
+        m.follow();//new monster added 
         m.where.x = 100;
         m.where.y = 100;
-        
+        //monster reset
         
       } 
       
