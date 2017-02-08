@@ -220,6 +220,6 @@ void draw(){
       }
     
     
-    }
+    }//reset to start after game over
 }
    
