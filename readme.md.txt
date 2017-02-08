@@ -1,0 +1,1 @@
+readme.mdhttps://youtu.be/DpisivZYaLMyoutube videoThe idea is simialr to snake but i incorporated siome of my favourite movie characters into it .they save the civilians and you get points.avoid the virus to stop losing livesuse the mouse to move the avatar aroundthe monster resets at a gvein point each time . the game will end when Lives = 0.
