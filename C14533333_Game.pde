@@ -87,6 +87,39 @@ void draw(){
        // }
       }//end selection and display hulk character
       
+      
+      
+      
+      
+      
+      if ((keyPressed == true) && ((key == '3'))) 
+    {
+      
+       stage = 3;
+    }
+    
+        if( stage == 3 ){
+          
+        background(255,0,30);
+        
+        
+        m.display();
+        f.display();
+        m.follow();
+        m.travel();
+        m.sides();
+        
+       // m.x = mouseX;
+        //m.y = mouseY;
+        
+        f.x = mouseX ;
+        f.y = mouseY ;
+    
+       // if(m.overlap(h)){
+        
+       // }
+      }//end selection and display flash character
+      
   
   
   
