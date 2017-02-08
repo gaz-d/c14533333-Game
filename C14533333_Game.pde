@@ -44,21 +44,21 @@ void draw(){
     if( stage == 1 ){
       
     image(game_screen,0,0,700,500);        
-    
-    
-    m.display();
-    h.display();
-    m.follow();
-    m.travel();
-    m.sides();
-    h.score1();
-    
+      
+      m.display();
+      h.display();
+      m.follow();
+      m.travel();
+      m.sides();
+      h.score1();
+      
     if(dist(h.x,h.y,c.x,c.y)<= 50){
         h.score++;
         c.update();
       }
       
      if(dist(h.x,h.y,m.where.x,m.where.y)<= 45){
+      
        if(h.lives <= 0)
        {
          
