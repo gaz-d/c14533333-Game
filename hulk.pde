@@ -1,6 +1,6 @@
-class Hero{
+class hulk{
   
-   PImage Deadpool;
+   PImage Hulk;
    int lives = 3;
    float x ;
    float y;
@@ -8,10 +8,11 @@ class Hero{
   
   
   
-  Hero() {
+  hulk() {
       
-        Deadpool = loadImage("Deadpool.png");
-     
+        Hulk = loadImage("The_hulk.png");
+        
+    
   }
   
   
@@ -22,7 +23,7 @@ class Hero{
     
    
  
-    image(Deadpool,x, y, 100, 100);
+    image(Hulk,x, y, 100, 100);
   /*  
     if ( x[POS] <= 0 || y[POS] <= 0 )
     {

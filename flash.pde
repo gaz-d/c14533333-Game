@@ -1,6 +1,6 @@
-class Hero{
+class flash{
   
-   PImage Deadpool;
+   PImage Flash;
    int lives = 3;
    float x ;
    float y;
@@ -8,10 +8,11 @@ class Hero{
   
   
   
-  Hero() {
+  flash() {
       
-        Deadpool = loadImage("Deadpool.png");
-     
+        Flash = loadImage("flash.png");
+       
+    
   }
   
   
@@ -22,7 +23,7 @@ class Hero{
     
    
  
-    image(Deadpool,x, y, 100, 100);
+    image(Flash,x, y, 100, 100);
   /*  
     if ( x[POS] <= 0 || y[POS] <= 0 )
     {
