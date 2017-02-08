@@ -211,7 +211,7 @@ void draw(){
         f.y = mouseY ;
     //end selection and display flash character
     
-}
+}//end selection of flash
 
     if(stage == 4 ){
     
@@ -226,5 +226,6 @@ void draw(){
     
     
     }//reset to start after game over
-}
+    
+}//end draw
    
