@@ -48,7 +48,7 @@ class Monster{
   void follow() {
     
  
-    image(virus, where.x, where.y, 40,40);
+    image(virus, where.x, where.y, 80,80);
     
     
   }

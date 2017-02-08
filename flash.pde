@@ -2,6 +2,7 @@ class flash{
   
    PImage Flash;
    int lives = 3;
+   int score =0;
    float x ;
    float y;
   
@@ -23,18 +24,8 @@ class flash{
     
    
  
-    image(Flash,x, y, 100, 100);
-  /*  
-    if ( x[POS] <= 0 || y[POS] <= 0 )
-    {
-      background(255);
-    }
-    
-       if ( x[POS] < 0 || y[POS] < 0)
-    {
-      background(255);
-      lives--;
-    }*/
+    image(Flash,x, y, 150, 150);
+ 
   }
   
  

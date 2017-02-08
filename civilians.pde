@@ -8,12 +8,20 @@
   
   
   
-  civilians() {
-        x = 300;
-        y = 300;
+  civilians(float tempb, float tempc) {
+        x = tempb;
+        y = tempc ;
         civilian1 = loadImage("civilian.png");
      
   }
+  
+  
+   void update(){
+   
+   x = random(25,450);
+   y = random(25,450);
+   
+ }
   
   
   void display() {
@@ -23,18 +31,10 @@
    
  
     image(civilian1,x, y, 100, 100);
-  /*  
-    if ( x[POS] <= 0 || y[POS] <= 0 )
-    {
-      background(255);
-    }
-    
-       if ( x[POS] < 0 || y[POS] < 0)
-    {
-      background(255);
-      lives--;
-    }*/
+
   }
   
+ 
+
  
 }
