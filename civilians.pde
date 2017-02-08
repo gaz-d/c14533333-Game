@@ -1,7 +1,7 @@
    class civilians{
    
    PImage civilian1;
-   int lives = 3;
+   
    float x ;
    float y;
   

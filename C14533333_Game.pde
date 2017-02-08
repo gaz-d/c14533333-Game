@@ -113,12 +113,12 @@ void draw(){
         
         
       if(dist(hu.x,hu.y,c.x,c.y)<= 50){
-        f.score++;
+        hu.score++;
         c.update();
       }
       
        if(dist(hu.x,hu.y,m.where.x,m.where.y)<= 45){
-       if(h.lives <= 0)
+       if(hu.lives <= 0)
        {
          
         stage = 4;

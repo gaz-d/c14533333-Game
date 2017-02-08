@@ -13,7 +13,7 @@ class Monster{
    
     where = new PVector(width/2,height/2);
     pace = new PVector(0,0);
-    acceleration = new PVector(10,10);
+    acceleration = new PVector(0,0);
     virus = loadImage("Furry_monster.png");
     r  = random(50,80);
 
@@ -36,7 +36,7 @@ class Monster{
     
     pace.add(acceleration);
     where.add(pace);
-    pace.limit(10);
+    pace.limit(6);
     
     //physics engine for monster to travel 
   }
