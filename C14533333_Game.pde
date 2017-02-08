@@ -8,8 +8,9 @@ Hero h;
 flash f;
 hulk hu;
 civilians c;
+//all class declerations
 
-int stage;
+int stage;// character selector
 
 void setup() {
   
