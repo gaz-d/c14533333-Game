@@ -1,6 +1,7 @@
 Monster m;
 Hero h;
 start_screen s;
+int x1 =0;
 
 void setup() {
   
@@ -12,15 +13,27 @@ void setup() {
 }
 
 void draw(){
-  background(255,0,30);
-    s.display();
-}
-   void keyPressed(){
-    switch(key)
-    {
-      case '1':
+  
+    background(255,0,30);
+    m.display();
     h.display();
+    m.follow();
+    m.travel();
+    m.sides();
+    
+   // m.x = mouseX;
+    //m.y = mouseY;
+    
+    h.x = mouseX -25;
+    h.y = mouseY -25;
+
+    
+   // if(m.overlap(h)){
+    
+   // }
+    
+
+}
+   
  
   
-    }
-}
