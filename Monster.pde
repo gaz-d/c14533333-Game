@@ -63,7 +63,7 @@ class Monster{
   }
   
 
-  }
+}//end monster class
   
   
   
