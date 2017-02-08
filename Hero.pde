@@ -6,10 +6,7 @@ class Hero{
    float x ;
    float y;
    
-  
-  
-  
-  
+
   Hero() {
       
         Deadpool = loadImage("Deadpool.png");
@@ -21,8 +18,6 @@ class Hero{
     stroke(0);
     fill(127);
     frameRate(60);
-    
-   
  
     image(Deadpool,x, y, 100, 100);
  
@@ -44,8 +39,7 @@ class Hero{
     text(score,680,30);
     
     textSize(20);
-    
    
-  }
+  }//end score1
  
-}
+}//end class
