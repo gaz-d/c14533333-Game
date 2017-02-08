@@ -11,7 +11,7 @@ class Monster{
   Monster() {
    
     where = new PVector(width/2,height/2);
-    pace = new PVector(1,3);
+    pace = new PVector(0,0);
     acceleration = new PVector(0,0);
     virus = loadImage("Furry_monster.png");
     //virus1 
@@ -20,8 +20,22 @@ class Monster{
   }
   
   void travel(){
+    
+    
+    
+    
+    PVector hero_location = new PVector(mouseX,mouseY);
+    hero_location.sub(where);
+    hero_location.setMag(0.2);
+    
+    acceleration = hero_location;
+
+    
     pace.add(acceleration);
     where.add(pace);
+    pace.limit(5);
+    
+    
   }
   
   void display() {
