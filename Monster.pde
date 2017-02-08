@@ -36,9 +36,9 @@ class Monster{
     
     pace.add(acceleration);
     where.add(pace);
-    pace.limit(5);
+    pace.limit(10);
     
-    
+    //physics engine for monster to travel 
   }
   
   void display() {

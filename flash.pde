@@ -46,7 +46,7 @@ class flash{
     textSize(20);
     
    
-  }
+  }//function to display score and lives
   
  
 }

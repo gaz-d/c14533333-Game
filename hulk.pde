@@ -46,6 +46,6 @@ class hulk{
     textSize(20);
     
    
-  }
+  }//function to display lives and score
  
 }
