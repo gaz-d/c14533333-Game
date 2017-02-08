@@ -49,11 +49,19 @@ void draw(){
     m.follow();
     m.travel();
     m.sides();
+    h.score1();
     
     if(dist(h.x,h.y,c.x,c.y)<= 50){
-        f.score++;
+        h.score++;
         c.update();
       }
+      
+     if(dist(h.x,h.y,m.x,m.y)<= 50){
+        h.lives--;
+        m.follow();
+      } 
+      
+      
     c.display();
     
    // m.x = mouseX;

@@ -2,6 +2,7 @@ class hulk{
   
    PImage Hulk;
    int lives = 3;
+   int score =0;
    float x ;
    float y;
   

@@ -3,6 +3,7 @@ class Monster{
   PImage virus;
   float x ;
   float y ;
+  float r;
   PVector where;
   PVector pace;
   PVector acceleration;
@@ -12,8 +13,10 @@ class Monster{
    
     where = new PVector(width/2,height/2);
     pace = new PVector(0,0);
-    acceleration = new PVector(0,0);
+    acceleration = new PVector(10,10);
     virus = loadImage("Furry_monster.png");
+    r  = random(50,80);
+
     //virus1 
    
 
@@ -46,9 +49,8 @@ class Monster{
   }
   
   void follow() {
-    
  
-    image(virus, where.x, where.y, 80,80);
+    image(virus, where.x, where.y,r ,r);
     
     
   }
