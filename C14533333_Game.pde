@@ -12,6 +12,8 @@ civilians c;
 int stage;
 
 void setup() {
+  
+  
   frameRate(1000);
   stage = 0;
   size(700,500,P3D);
@@ -21,6 +23,7 @@ void setup() {
   hu = new hulk();
   m = new Monster();
   c = new civilians(300,300);
+  //create all new classes
   
   start_screen = loadImage("start_screen.png");
   game_screen = loadImage("game_background.png");
@@ -28,7 +31,7 @@ void setup() {
   image(start_screen,0,0,700,500);
   
  
-}
+}//end setup
 
 void draw(){
   
