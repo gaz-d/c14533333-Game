@@ -104,6 +104,7 @@ void draw(){
         m.follow();
         m.travel();
         m.sides();
+        hu.score1();//display score and lives
         
         
       if(dist(hu.x,hu.y,c.x,c.y)<= 50){
@@ -168,6 +169,7 @@ void draw(){
         m.follow();
         m.travel();
         m.sides();
+        f.score1();
         
       if(dist(f.x,f.y,c.x,c.y)<= 50){
         f.score++;

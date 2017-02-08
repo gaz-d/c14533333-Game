@@ -25,18 +25,27 @@ class hulk{
    
  
     image(Hulk,x, y, 140, 140);
-  /*  
-    if ( x[POS] <= 0 || y[POS] <= 0 )
-    {
-      background(255);
-    }
-    
-       if ( x[POS] < 0 || y[POS] < 0)
-    {
-      background(255);
-      lives--;
-    }*/
   }
   
+  
+    
+  void score1(){
+    
+    PFont f = createFont("TrebuchetMS-Bold" ,20);
+    
+    String l = "Lives:";
+    String sc = "Score:";
+    
+    textFont(f);
+    
+    text(l,10,30);
+    text(lives,10,50);
+    text(sc,620,30);
+    text(score,680,30);
+    
+    textSize(20);
+    
+   
+  }
  
 }

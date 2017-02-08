@@ -45,11 +45,7 @@ class Hero{
     
     textSize(20);
     
-    
-    
-
-  
-  
+   
   }
  
 }

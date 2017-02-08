@@ -28,5 +28,25 @@ class flash{
  
   }
   
+    
+  void score1(){
+    
+    PFont f = createFont("TrebuchetMS-Bold" ,20);
+    
+    String l = "Lives:";
+    String sc = "Score:";
+    
+    textFont(f);
+    
+    text(l,10,30);
+    text(lives,10,50);
+    text(sc,620,30);
+    text(score,680,30);
+    
+    textSize(20);
+    
+   
+  }
+  
  
 }
