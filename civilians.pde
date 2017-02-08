@@ -1,6 +1,6 @@
-class hulk{
-  
-   PImage Hulk;
+   class civilians{
+   
+   PImage civilian1;
    int lives = 3;
    float x ;
    float y;
@@ -8,22 +8,21 @@ class hulk{
   
   
   
-  hulk() {
-      
-        Hulk = loadImage("The_hulk.png");
-        
-    
+  civilians() {
+        x = 300;
+        y = 300;
+        civilian1 = loadImage("civilian.png");
+     
   }
   
   
   void display() {
     stroke(0);
     fill(127);
-    frameRate(60);
     
    
  
-    image(Hulk,x, y, 140, 140);
+    image(civilian1,x, y, 100, 100);
   /*  
     if ( x[POS] <= 0 || y[POS] <= 0 )
     {

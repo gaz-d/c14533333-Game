@@ -1,14 +1,17 @@
 PImage start_screen;
+PImage game_screen;
 
 
 Monster m;
 Hero h;
 flash f;
 hulk hu;
+civilians c;
 start_screen s;
 int stage;
 
 void setup() {
+  frameRate(1000);
   stage = 0;
   size(700,500,P3D);
   s= new start_screen();
@@ -16,8 +19,10 @@ void setup() {
   f = new flash();
   hu = new hulk();
   m = new Monster();
+  c = new civilians();
   
   start_screen = loadImage("start_screen.png");
+  game_screen = loadImage("game_background.png");
   image(start_screen,0,0,700,500);
   
  
@@ -36,7 +41,7 @@ void draw(){
     
     if( stage == 1 ){
       
-    background(255,0,30);
+    image(game_screen,0,0,700,500);        
     
     
     m.display();
@@ -44,6 +49,7 @@ void draw(){
     m.follow();
     m.travel();
     m.sides();
+    c.display();
     
    // m.x = mouseX;
     //m.y = mouseY;
@@ -51,7 +57,7 @@ void draw(){
     h.x = mouseX ;
     h.y = mouseY ;
 
-   // if(m.overlap(h)){
+   if(m.overlap(h)){
     
    // }
   }//finish displaying Deadpool Character
@@ -67,14 +73,15 @@ void draw(){
     
         if( stage == 2 ){
           
-        background(255,0,30);
-        
+        image(game_screen,0,0,700,500);        
         
         m.display();
         hu.display();
         m.follow();
         m.travel();
         m.sides();
+        c.display();
+
         
        // m.x = mouseX;
         //m.y = mouseY;
@@ -100,7 +107,8 @@ void draw(){
     
         if( stage == 3 ){
           
-        background(255,0,30);
+    image(game_screen,0,0,700,500);        
+
         
         
         m.display();
@@ -108,6 +116,7 @@ void draw(){
         m.follow();
         m.travel();
         m.sides();
+        c.display();
         
        // m.x = mouseX;
         //m.y = mouseY;
@@ -119,11 +128,7 @@ void draw(){
         
        // }
       }//end selection and display flash character
-      
-  
-  
-  
-  
+    
 }
    
  
